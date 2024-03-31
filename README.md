@@ -8,8 +8,8 @@ In multiple linear regression, the goal is to estimate the parameters (coefficie
 
 Y = β0 + β1X₁ + β2X₂ + ... + βn\*Xn + ε
 
-
 where:
+
 - Y is the dependent variable (target),
 - X₁, X₂, ..., Xn are the independent variables (features),
 - β0 is the intercept term,
@@ -54,6 +54,8 @@ intercept = model.intercept_
 X_new = np.array([[4, 5]])  # New data
 prediction = model.predict(X_new)
 print("Predicted value:", prediction)
+```
 
 ## Conclusion
+
 Multiple Linear Regression is a versatile and widely used technique for modeling the relationship between multiple independent variables and a single dependent variable. It provides insights into the impact of each feature on the target variable and can be applied to various regression tasks in different domains.
