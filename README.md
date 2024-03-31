@@ -50,6 +50,18 @@ prediction = model.predict(X_new)
 print("Predicted value:", prediction)
 ```
 
+# Why There is No Need to Apply Feature Scaling in Multiple Linear Regression
+
+In multiple linear regression, feature scaling is not always necessary because of the following reasons:
+
+1. **Interpretation of Coefficients**: In multiple linear regression, each coefficient represents the change in the dependent variable (target) for a one-unit change in the corresponding independent variable (feature), holding all other variables constant. Since the coefficients are relative to each other, the scale of the features does not affect their interpretation.
+
+2. **Independence of Variables**: The coefficients in multiple linear regression are estimated independently of the scale of the features. Therefore, scaling the features does not impact the estimated coefficients or the relationship between the features and the target variable.
+
+3. **Consequence of Standardization**: While feature scaling can sometimes improve the numerical stability of the optimization process in certain algorithms, such as gradient descent, multiple linear regression often does not require standardization because it does not rely on the Euclidean distance between data points (as in clustering algorithms, for example).
+
+However, it's essential to note that there may be situations where feature scaling could still be beneficial, such as when the features have vastly different scales or when using regularization techniques like Ridge or Lasso regression. In those cases, feature scaling may help improve the convergence speed of optimization algorithms or the overall performance of the model.
+
 ## Conclusion
 
 Multiple Linear Regression is a versatile technique for modeling the relationship between multiple independent variables and a single dependent variable. It provides insights into feature importance and can be applied to various regression tasks.
